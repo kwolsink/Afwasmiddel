@@ -22,7 +22,7 @@ class UserModelTests(TestCase):
         self.assertFalse(user.is_superuser)
 
     def test_create_super_user_valid(self):
-        user = self.user_manager.create_super_user(email=self.test_email, username=self.test_username,
+        user = self.user_manager.create_superuser(email=self.test_email, username=self.test_username,
                                                    password=self.test_password)
         self.assertIsNotNone(user)
         self.assertEquals(user.username, self.test_username)

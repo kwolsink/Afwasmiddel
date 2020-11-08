@@ -46,7 +46,7 @@ AUTH_USER_MODEL = 'authentication.AfwasmiddelUser'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
 

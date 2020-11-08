@@ -23,7 +23,7 @@ class AfwasmiddelUserManager(BaseUserManager):
 
         return user
 
-    def create_super_user(self, email, username, password):
+    def create_superuser(self, email, username, password):
         """
         Creates a super user
         :param email: the email of the user
@@ -49,7 +49,7 @@ class AfwasmiddelUser(AbstractUser):
 
     USERNAME_FIELD = 'email'
     # REQUIRED_FIELDS are the fields that are required when create_super_user is called, it isn't used elsewhere.
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['username']
     # The user manager
     objects = AfwasmiddelUserManager()
 
