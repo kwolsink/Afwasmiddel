@@ -1,4 +1,5 @@
 /.idea/
 Afwasmiddel/__pycache__/
-/__pycache__/
+/authentication/__pycache__/
+__pycache__/
 /db.sqlite3
